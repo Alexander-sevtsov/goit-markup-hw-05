@@ -688,7 +688,8 @@ ol {
 }
 
 .contacts-form-checkbox-label {
-  display: block;
+  display: flex;
+  align-items: center;
   color: var(--lightslate, #8e8f99);
   font-size: 12px;
   font-weight: 400;
@@ -700,10 +701,27 @@ ol {
   color: var(--iris);
 }
 
+.contacts-form-checkbox {
+  position: absolute;
+  appearance: none;
+}
+
+.contacts-form-checkbox:checked + .contacts-form-own-checkbox {
+  fill: var(--cloud);
+  background-color: var(--ocean);
+}
+
+.contacts-form-checkbox:focus + .contacts-form-own-checkbox {
+  outline: 2px solid rgba(0, 0, 255, 0.5);
+}
+
 .contacts-form-own-checkbox {
+  fill: transparent;
+  cursor: pointer;
   padding: 2px;
   border-radius: 2px;
   border: 1px solid var(--navyblue-modal, rgba(46, 47, 66, 0.4));
+  margin-right: 8px;
 }
 
 /* end modal form */
