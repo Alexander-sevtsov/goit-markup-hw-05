@@ -709,6 +709,7 @@ ol {
 .contacts-form-checkbox:checked + .contacts-form-own-checkbox {
   fill: var(--cloud);
   background-color: var(--ocean);
+  border: none;
 }
 
 .contacts-form-checkbox:focus + .contacts-form-own-checkbox {
