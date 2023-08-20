@@ -616,12 +616,12 @@ ol {
   margin-top: 72px;
 }
 
-.contacts-form-field {
-  display: block;
-  margin-bottom: 18px;
+.contacts-form-wrapper {
+  margin-bottom: 8px;
 }
 
-.contacts-form-field-desc {
+.contacts-form-field {
+  display: block;
   color: var(--lightslate);
   font-size: 12px;
   line-height: 1.2; /* 116.667% */
@@ -629,13 +629,18 @@ ol {
   margin-bottom: 4px;
 }
 
+.contacts-form-field-desc {
+}
+
 .contacts-form-input {
   width: 100%;
   height: 40px;
   border-radius: 4px;
   border: 1px solid var(--navyblue-modal);
-  padding-left: 62px;
+  padding-left: 38px;
   font-size: 18px;
+  outline: transparent;
+  background-color: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -724,6 +729,22 @@ ol {
   border-radius: 2px;
   border: 1px solid var(--navyblue-modal, rgba(46, 47, 66, 0.4));
   margin-right: 8px;
+}
+
+.contacts-form-btn {
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--white);
+  margin: 0 auto;
+  background-color: var(--iris);
+  border: none;
+  border-radius: 4px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
 /* end modal form */
