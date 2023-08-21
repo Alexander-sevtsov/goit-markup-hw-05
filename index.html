@@ -404,6 +404,24 @@
             </li>
           </ul>
         </div>
+        <div class="footer-input-wrapper">
+          <p class="footer-input-desc">Subscribe</p>
+          <form class="footer-form">
+            <label class="footer-form-label">
+              <input
+                class="footer-form-input"
+                name="subscribe-email"
+                type="email"
+                placeholder="E-mail"
+              />
+            </label>
+            <button class="footer-form-btn" type="submit">
+              Subscribe<svg class="footer-form-btn-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-paper-plane-icon"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
     <!-- modal window -->
@@ -481,18 +499,22 @@
 
           <div class="contacts-checkbox-wrapper">
             <input
-              class="contacts-form-checkbox"
+              class="contacts-form-checkbox visually-hidden"
               type="checkbox"
-              name="user_accept_policy"
+              name="user-privacy"
+              id="user-privacy"
+              value="true"
               required
             />
-            <label class="contacts-form-checkbox-label">
+            <label class="contacts-form-checkbox-label" for="user-privacy">
               I accept the terms and conditions of the&nbsp;
               <a href="" class="contacts-form-link">Privacy Policy</a>
+              <span class="form-checkbox-icon-wrapper">
+                <svg class="contacts-form-own-checkbox" width="10" height="8">
+                  <use href="./images/icons.svg#icon-checkmark-icon"></use>
+                </svg>
+              </span>
             </label>
-            <svg class="contacts-form-own-checkbox" width="16" height="16">
-              <use href="./images/icons.svg#icon-checkmark-icon"></use>
-            </svg>
           </div>
           <button class="contacts-form-btn" type="submit">Send</button>
         </form>
