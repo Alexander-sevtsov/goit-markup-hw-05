@@ -786,13 +786,13 @@ ol {
   appearance: none;
 }
 
-.contacts-form-checkbox:checked ~ .form-checkbox-icon-wrapper {
+.contacts-form-checkbox:checked + .contacts-form-checkbox-label > .form-checkbox-icon-wrapper {
   fill: var(--cloud);
   background-color: var(--ocean);
   border: none;
 }
 
-.contacts-form-checkbox:focus + .contacts-form-own-checkbox {
+.contacts-form-checkbox:focus + .contacts-form-checkbox-label > .form-checkbox-icon-wrapper {
   outline: 2px solid rgba(0, 0, 255, 0.5);
 }
 
@@ -807,15 +807,7 @@ ol {
   align-items: center;
   justify-content: center;
   fill: transparent;
-}
-
-.contacts-form-own-checkbox {
-  fill: transparent;
   cursor: pointer;
-  padding: 2px;
-  border-radius: 2px;
-  border: 1px solid var(--navyblue-modal, rgba(46, 47, 66, 0.4));
-  margin-right: 8px;
 }
 
 .contacts-form-btn {
